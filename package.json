@@ -1,0 +1,26 @@
+{
+  "name": "epoxyjs-operators",
+  "version": "0.1.0",
+  "description": "Operators for EpoxyJS that create reactive read-only collections tied to Epoxy collections",
+  "main": "./dist/epoxy_operators.js",
+  "types": "./dist/epoxy_operators.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeatonTech/epoxy_js_operators"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register ./test/*.ts",
+    "test_dist": "tsc; mocha ./dist/test/*.js"
+  },
+  "author": "keaton.brandt@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^5.5.8",
+    "epoxyjs": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0"
+  }
+}
